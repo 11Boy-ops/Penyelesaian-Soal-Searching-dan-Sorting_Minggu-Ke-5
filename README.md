@@ -12,7 +12,7 @@ Repositori ini berisi implementasi solusi untuk lima soal tentang algoritma penc
 
 ---
 
-## Soal 1 – Modified Binary Search
+## Soal 1
 
 **Fungsi:** `countOccurrences(sortedList, target)`  
 **Deskripsi:** Mengembalikan berapa kali `target` muncul dalam `sortedList`. Menggunakan binary search untuk menemukan indeks pertama dan terakhir.
@@ -66,7 +66,7 @@ print(countOccurrences([1, 2, 4, 4, 4, 4, 7, 9, 12], 5))  # 0
 
 ---
 
-## Soal 2 – Bubble Sort dengan Analisis Langkah
+## Soal 2
 
 **Fungsi:** `bubbleSortWithAnalysis(arr)`  
 **Deskripsi:** Mengembalikan tuple `(sorted_list, total_comparisons, total_swaps, passes_used)`, mencetak keadaan array setiap pass, dan berhenti lebih awal jika tidak ada pertukaran.
@@ -123,7 +123,7 @@ Sorted: [1, 2, 3, 4, 5], Comparisons: 4, Swaps: 0, Passes: 1
 
 ---
 
-## Soal 3 – Hybrid Sort
+## Soal 3
 
 **Fungsi:** `hybridSort(arr, threshold=10)`, `insertion_sort_ops(arr)`, `selection_sort_ops(arr)`  
 **Deskripsi:** Membandingkan total operasi (comparisons + swaps) antara hybrid sort (insertion untuk ≤10 elemen, selection untuk >10), pure insertion sort, dan pure selection sort pada array acak ukuran 50, 100, 500.
@@ -225,7 +225,7 @@ Ukuran | Hybrid (comp+swaps) | Insertion (comp+swaps) | Selection (comp+swaps)
 
 ---
 
-## Soal 4 – Merge Tiga Sorted Lists
+## Soal 4
 
 **Fungsi:** `mergeThreeSortedLists(listA, listB, listC)`  
 **Deskripsi:** Menggabungkan tiga list terurut menjadi satu list terurut dalam satu pass (O(n)) menggunakan tiga pointer.
@@ -296,7 +296,7 @@ print(mergeThreeSortedLists([1, 5, 9], [2, 6, 10], [3, 4, 7]))
 
 ---
 
-## Soal 5 – Inversions Counter
+## Soal 5
 
 **Fungsi:** `countInversionsNaive(arr)` dan `countInversionsSmart(arr)`  
 **Deskripsi:** Menghitung jumlah inversi (i < j dan arr[i] > arr[j]) dengan metode brute force O(n²) dan divide-and-conquer O(n log n). Membandingkan waktu eksekusi pada array acak ukuran 1000, 5000, 10000.
@@ -377,5 +377,3 @@ Ukuran | Naive (detik) | Smart (detik) | Hasil sama?
 ## Cara Menjalankan
 
 Pastikan Python 3 terinstal. Simpan kode setiap soal dalam file `.py` terpisah atau jalankan langsung di interpreter. Untuk soal 3 dan 5 yang melibatkan modul `random` dan `time`, pastikan tidak ada konflik penamaan.
-
-Semua fungsi telah diuji dan memberikan output sesuai yang diharapkan.
